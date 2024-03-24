@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+</head>
+<body>
+
+    <h2>Data:</h2>
+    <label for="Data">Insira a data de hoje: </label><br>
+    <input type="date" id="Data_form" value="Data"><br>
+
+
+    <h2>Informações de login: </h2>
+    <label for="Login_User">Usuário: </label><br>
+    <input type="text" id="Login_User"><br>
+    <label for="Login_Password">Senha: </label><br>
+    <input type="password" id="Login_Password"><br>
+
+    <h2>Dados Pessoais: </h2>
+    <label for="NomeP">Nome: </label><br>
+    <input type="text" id="NomeP"><br>
+    <label for="Endereço">Endereço: </label><br>
+    <input type="text" id="Endereço"><br>
+    <label for="NumT">Numero </label><br>
+    <input type="text" id="NumT"><br>
+    <label for="Comp">Complemento </label><br>
+    <input type="text" id="Comp">
+    <br>
+    
+    <label for="Cidades">Escolha sua cidade: </label><br>
+    <input list="Cidades" name="Cidades"><br>
+    <datalist id="Cidades">
+    <option value="Sorocaba">
+    <option value="Votorantim">
+    <option value="Salto de pirapora">
+    <option value="Araçoiaba da serra">
+    <option value="Iperó">
+    <option value="Porto feliz">
+    <option value="Itu">
+    <option value="Mairinque">
+    <option value="Aluminio">   
+    </option>
+ </datalist>
+
+<br>
+ <label for="Estado">Qual seu estado: </label>
+ <select id="estado" name="estado">
+  <option value="">AC</option>
+  <option value="">AL</option>
+  <option value="">AP</option>
+  <option value="">AM</option>
+  <option value="">BA</option>
+  <option value="">CE</option>
+  <option value="">ES</option>
+  <option value="">GO</option>
+  <option value="">MA</option>
+  <option value="">MT</option>
+  <option value="">MS</option>
+  <option value="">MG</option>
+  <option value="">PA</option>
+  <option value="">PB</option>
+  <option value="">PR</option>
+  <option value="">PE</option>
+  <option value="">PI</option>
+  <option value="">RJ</option>
+  <option value="">RN</option>
+  <option value="">RS</option>
+  <option value="">RO</option>
+  <option value="">RR</option>
+  <option value="">SC</option>
+  <option value="">SP</option>
+  <option value="">SE</option>
+  <option value="">TO</option>
+  <option value="">DF</option>
+ </select>
+<br>
+<br>
+ <label for="CEP">CEP </label><br>
+ <input type="text" id="CEP"><br>
+
+
+
+<h2>Gênero</h2>
+ <input type="radio" id="masc"name="Genero" value="Masc">
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="Fem" name="Genero" value="Feminino">
+        <label for="Fem">Feminino</label><br>
+        <input type="radio" id="NB" name="Genero" value="NaoIndet">
+        <label for="NB">Prefiro não informar</label>
+
+
+        <h2>Curso</h2>
+
+        <form>
+            <input type="checkbox" id="ADS" name="ADS" value="ADS">
+            <label for="ADS"> ADS</label><br>
+            <input type="checkbox" id="Jogos" name="Jogos" value="Jogos">
+            <label for="Jogos"> Jogos</label><br>
+            <input type="checkbox" id="Gestão de TI" name="Gestão_de_TI" value="Gestão_de_TI">
+            <label for="Gestão de TI"> Gestão de TI</label><br>
+            <input type="checkbox" id="Banco de dados" name="bancodedados" value="Banco de dados">
+            <label for="Banco de dados"> Banco de dados</label><br>
+        </form>
+
+        <h2>Modelo de curso</h2>
+        <input type="radio" id="Pres"name="Modelo" value="Presencial">
+        <label for="Presencial">Presencial</label><br>
+        <input type="radio" id="EAD" name="Modelo" value="EAD">
+        <label for="EAD">EAD</label><br>
+        <input type="radio" id="SemiPres" name="Modelo" value="Semi Presencial">
+        <label for="Semi Presencial">Semi Presencial</label>
+        
+        <br>
+        <br>
+
+        <input type="button" value="Enviar" onclick="alert('Formulário Enviado!!')">
+</body>
+</html>
